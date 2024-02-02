@@ -3,7 +3,7 @@ WORKDIR /app
 
 # COPY files which will bring dependency of project
 COPY package.json .
-Copy pnpm-lock.yaml .
+COPY pnpm-lock.yaml .
 
 RUN npm i -g pnpm
 RUN pnpm install
